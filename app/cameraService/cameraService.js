@@ -1,0 +1,1 @@
+import camera from "../models/camera.js"
