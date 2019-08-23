@@ -4,7 +4,8 @@ import cameraService from "../cameraService/cameraService.js"
 
 
 
-export default cameraController {
+export default class cameraController {
+
 
 }
 console.log("controller")

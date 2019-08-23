@@ -1,4 +1,4 @@
-import camera from "../models/camera.js"
+import Camera from "../models/camera.js"
 
 
 
