@@ -6,11 +6,19 @@ export default class Camera {
     this.brand = data.brand
     this.model = data.model
     this.price = data.price
+    this.imgUrl = data.imgUrl
   }
 
 
 
   getTemplate(index) {
-
+    let template =
+      <div class="col-4">
+        <h1>${this.type}</h1>
+        <h3>${this.brand}</h3>
+        <h3>${this.model}</h3>
+        <h3>${this.price}</h3>
+        <img src="${this.imgUrl}" alt=""></img>
+      </div>
   }
 }
