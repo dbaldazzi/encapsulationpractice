@@ -13,14 +13,15 @@ export default class Camera {
 
   getTemplate(index) {
     let template =
-      <div class="col-4">
-        <h1>${this.type}</h1>
-        <h3>${this.brand}</h3>
-        <h3>${this.model}</h3>
-        <h3>${this.price}</h3>
-        <img src="${this.imgUrl}" alt=""></img>
-        <button class="btn btn-danger" onclick="app.controllers.carController.deleteCar(${this._id})">Delete Car</button>
-
+      <div clas="row">
+        <div class="col-4">
+          <h1>${this.type}</h1>
+          <h3>${this.brand}</h3>
+          <h3>${this.model}</h3>
+          <h3>${this.price}</h3>
+          <img src="${this.imgUrl}" alt=""></img>
+          <button class="btn btn-danger" onclick="app.controllers.carController.deleteCar(${this._id})">Delete Car</button>
+        </div>
       </div>
   }
 }

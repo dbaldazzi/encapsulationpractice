@@ -11,11 +11,22 @@ let _state = {
 }
 
 
-
-
-
 export default class cameraService {
-  constructor() {
-
+  deleteCamera(id) {
+    _state.cameras.forEach((Camera, i) => {
+      if (Camera._id === id) {
+        _state.cameras.splice(i, 1)
+      }
+    })
   }
+
+}
+
+addCamera(new Camera) {
+  _state.cameras.push(new Camera(new Camera))
+  console.log(_state.cameras)
+}
+
+getCamera() {
+  return _state.cameras.map(Camera => new Camera(Camera))
 }
