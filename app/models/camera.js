@@ -19,6 +19,8 @@ export default class Camera {
         <h3>${this.model}</h3>
         <h3>${this.price}</h3>
         <img src="${this.imgUrl}" alt=""></img>
+        <button class="btn btn-danger" onclick="app.controllers.carController.deleteCar(${this._id})">Delete Car</button>
+
       </div>
   }
 }
