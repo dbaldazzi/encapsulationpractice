@@ -1,1 +1,1 @@
-import cameraController from "../cameraController/cameraController.js"
+import cameraController from "../app/cameraController/cameraController.js"
